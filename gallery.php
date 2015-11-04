@@ -1,0 +1,157 @@
+<?php
+session_start();
+if(!isset($_SESSION['member'])){
+	header("Location: index.php");
+}
+?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+   	<link rel="icon" type="image/png" href="http://www.raspberrypi.org/wp-content/themes/mind-control/images/favicon.png"/>
+
+	 <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>RPI: Camera Settings</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+	<link href="assets/css/gallery.css" rel="stylesheet" />
+	 <link rel ="alternate stylesheet" type="text/css" href="assets/css/redstyle.css" title="alternate 1" />
+	<script type ="text/javascript" src="assets/js/styleswitcher.js"></script>
+
+  <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	 	 <link rel="icon" type="image/png" href="http://www.raspberrypi.org/wp-content/themes/mind-control/images/favicon.png" />
+
+	 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <b>Current directory: </b>Gallery
+										<form action = "logout.php" method = "POST"
+					<button type = "Submit" class = "btn btn-primary navbar-btn" value = "logout" onclick = "location.href='/logout.php'" > Logout </button>
+					</form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html">
+					<b>RPI:<b> 
+					<br>
+					&nbsp&nbsp&nbsp&nbsp <b>Control Panel </b>
+                </a>
+
+            </div>
+
+            <div class="left-div">
+                <div class="user-settings-wrapper">
+                    <ul class="nav">
+
+               
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- LOGO HEADER END-->
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                          <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a class="menu-top-active" href="home.html"><img src = "assets/img/Home.jpg" alt="Home" style="width:20px;height: 20px"></a></li>
+                            <li><a href="status.php">Status</a></li>
+                            <li><a href="gallery.php">Gallery</a></li>
+                              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Camera Options <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+				<form action="enablecamera.php" method="POST">
+				<li><input type="submit" class="btn btn-primary navbar-btn" onclick ="location.href='/enablecamera.php'" name ="ENABLE" value="Enable Camera" ></input></li>
+				</form>
+                <form action="disablecamera.php" method="POST">
+				<li><input type="submit" class="btn btn-primary navbar-btn" onclick ="location.href='/disablecamera.php'" name ="DISABLE" value="Disable Camera" ></input></li>
+				</form>
+			  </ul>
+            </li>
+            </li>
+			  <li><a type="submit" href="photo.php">Take a picture</a></li>
+		  <li><a type="submit" href="video.php">Video(10 Sec)</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-head-line">Gallery</h4>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-success">
+                        View your photos here!
+                    </div>
+                </div>
+
+            </div>
+<!---->
+</head>
+
+
+<div id="container">
+	<div class="gallery">
+		
+		<ul id="itemContainer">
+<?php include("gallerys.php"); ?>
+		</ul>
+	</div>
+</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+</html>
