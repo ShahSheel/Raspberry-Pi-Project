@@ -1,7 +1,7 @@
     <?php
     $mysql_hostname = "localhost";
     $mysql_user = "root";
-    $mysql_password = "football10";
+    $mysql_password = "**********";
     $mysql_database = "backup";
     $prefix = "";
     $bd = mysql_connect($mysql_hostname, $mysql_user, $mysql_password) or die("Could not connect database");
