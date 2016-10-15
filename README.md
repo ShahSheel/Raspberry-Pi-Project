@@ -19,9 +19,6 @@ What the application does/has:
 * The application is easy to use and understandable
 * User can logout
 
-
-Check out the video <a href="http://users.sussex.ac.uk/~ss799/projectvideos.html">here! </a>
-
 Code used:
 PHP
 MYSQL
