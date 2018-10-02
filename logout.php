@@ -7,6 +7,5 @@ if(!isset($_SESSION['member'])){
     session_destroy ();
 	
 	header("location: index.php");
-	
 ?>
 

@@ -125,7 +125,6 @@ if(!isset($_SESSION['member'])){
                         View your photos here!
                     </div>
                 </div>
-
             </div>
 <!---->
 </head>

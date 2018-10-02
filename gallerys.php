@@ -3,7 +3,6 @@
 This is not my own work, all credit to the developer of the gallery ~ 
 Maidenbower
 https://ideone.com/zXCdNh
-
 */
 <?php
 

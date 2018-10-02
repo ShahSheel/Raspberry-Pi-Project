@@ -13,6 +13,5 @@ GPIO.setup(pin, GPIO.OUT)#Sets pin to 11
 #Make this last for 5 seconds
 for i in range(0,5):
        on(pin)
-
 GPIO.cleanup()
 

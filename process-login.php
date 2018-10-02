@@ -9,9 +9,7 @@ session_start();
 
 <title>Index: Login</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-
 </head>
-
 <body>
 <div style="margin:0 auto; width:300px;">
 	<?php
@@ -32,8 +30,7 @@ unset($_SESSION['INVALID']);
 	<?php
 	include_once("index.php")
 	?>
-</form>
-			
+</form>	
 	</div>
 </body>
 </html>

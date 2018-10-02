@@ -104,12 +104,9 @@ unset($_SESSION['INVALID']);
                             <li>
                                 Much much more!
                             </li>
-                        </ul>
-                       
-                    </div>
-                    
+                        </ul>                
+                    </div>                
                 </div>
-
             </div>
         </div>
     </div>

@@ -111,7 +111,6 @@ if(!isset($_SESSION['member'])){
                     <h4 class="page-head-line">Status</h4>
 
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-md-12">

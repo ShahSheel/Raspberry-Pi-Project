@@ -8,10 +8,9 @@ $USEvcgencmd = 0;
 $DURATION_start=microtime(true);
 ?>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-<title><?php echo $_SERVER['SERVER_NAME']; ?> - Informations</title>
-<meta HTTP-EQUIV=Refresh CONTENT='10'>
-
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title><?php echo $_SERVER['SERVER_NAME']; ?> - Informations</title>
+    <meta HTTP-EQUIV=Refresh CONTENT='10'>
 </head>
 <body>
 
