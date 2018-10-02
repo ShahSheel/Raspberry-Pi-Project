@@ -1,6 +1,6 @@
-# Raspberry-Pi-Project
+# Who stole my food!?
 
-End of year project - 2015
+Being a student, living in halls - you will always find that one person who steals from you :( . This proect was created just to catch that sneaky person. 
 
 This project involves setting up a Raspberry Pi along with a sensor and a camera. If a movement is detected, the camera will capture the person/object and upload it to the households owner Raspberry Pi control panel where they can view the photo, status and take a photo and video from the raspberry pi through the control panel. In addition to this, a secure log in system was created, along with LED lights to light-up depending if the password is incorrect or correct.
 
