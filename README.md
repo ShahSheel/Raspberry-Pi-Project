@@ -1,4 +1,4 @@
-# Who stole my food!?
+# Who stole my food?
 
 Being a student, living in halls - you will always find that one person who steals from you :( . This proect was created just to catch that sneaky person. 
 
