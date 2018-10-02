@@ -20,7 +20,7 @@ What the application does/has:
 * User can logout
 
 Code used:
-PHP
+PHP 5
 MYSQL
 Python
 JavaScript
