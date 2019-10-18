@@ -7,7 +7,7 @@ This project involves setting up a Raspberry Pi along with a sensor and a camera
 What the application does/has:
 * Alerts the user using LED lights to tell if the password is wrong or correct
 * Login cannot be bypassed
-* The application allows the user to take pictures and redirects them to a gallery to view it.
+* The application allows the user to take pictures and redirects them to a gallery to view it
 * The photos that are uploaded to the gallery are in date time order
 * The application takes a video for a duration of 10 seconds
 * Sends an email to the user when it detects movement
